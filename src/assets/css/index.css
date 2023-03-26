@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*COLORS*/
+    --background-color: #121214;
+    --text-color: white;
+    --button-color: #42D3FF;
+    --controls-color: #42d3ff21 ;
+
+    /*FONTS*/
+    --font: 'Roboto', sans-serif;
+
+    /*ACCESSIBILITY*/
+    font-size: 62.5%;
+}
+
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font);
+}
+
+#timer{
+    font-size: 9rem;
+    display: flex;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.controls{
+    background-color: var(--controls-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    gap: 3.2rem;
+    width: clamp(10rem, 10rem + 30vw, 22.8rem) ;
+    height: clamp(10rem, 8rem + 10vh, 10.8rem);
+
+}
+
+.play svg path,
+.set svg path,
+.sund svg path{
+    fill: var(--button-color);
+}
