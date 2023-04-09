@@ -27,6 +27,13 @@ body{
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--font);
+    display: grid;
+    min-height: 100vh;
+}
+
+main{
+    justify-self: center;
+    align-self: end;
 }
 
 #timer{
@@ -60,4 +67,11 @@ button{
 .set svg path,
 .sund svg path{
     fill: var(--button-color);
+}
+
+footer{
+   
+    justify-self: end;
+    align-self: end;
+    padding: 0 4rem;
 }
